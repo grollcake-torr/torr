@@ -41,7 +41,7 @@ $CONFIG = array(
         "https://torrenthaja.com/bbs/board.php?bo_table=torrent_ent&sca=&sop=and&sfl=wr_subject&stx={k}"
     ),
     "drama" => array(   # TV드라마
-        "https://torrenthaja.com/torrent_drama.html?bo_table=torrent_drama&sca=%EB%B0%A9%EC%98%81%EC%A4%91&sop=and&sfl=wr_subject&stx={k}"
+        "https://torrenthaja.com/bbs/board.php?bo_table=torrent_drama&sca=&sop=and&sfl=wr_subject&stx={k}"
     ),
     "docu" => array(    # TV다큐/시사
         "https://torrenthaja.com/bbs/board.php?bo_table=torrent_docu&sca=&sop=and&sfl=wr_subject&stx={k}"
@@ -50,10 +50,13 @@ $CONFIG = array(
         "https://torrenthaja.com/bbs/board.php?bo_table=torrent_fdrama&sca=&sop=and&sfl=wr_subject&stx={k}"
     ),
     "etc" => array(     # 스포츠, 애니 등
-        "https://torrenthaja.com/bbs/board.php?bo_table=torrent_sports&sca=&sop=and&sfl=wr_subject&stx={k}"
+        "https://torrenthaja.com/bbs/board.php?bo_table=torrent_sports&sca=&sop=and&sfl=wr_subject&stx={k}",
+        "https://torrenthaja.com/bbs/board.php?bo_table=torrent_ani&sca=&sop=and&sfl=wr_subject&stx={k}"
     ),
+    
     # 게시판을 지정하지 않은 경우 검색할 게시판 목록
     "all" => array("ent", "drama", "docu", "mid"),
+    
     # 글목록, 다운로드 링크 검색을 위한 정규식 패턴. (변경자: s-단일 라인으로 처리, m-여러 라인으로 처리, i-대소문자 무시)
     "_page_link_preprocess" => array(),
     "_page_link" => '!<div class="td-subject ellipsis">.*?<a href="(?P<link>.+?)">(?P<title>.+?)</a>\s*</div>!si',
